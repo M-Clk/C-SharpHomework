@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9BD091EB-A6D6-4A97-88D7-B63AB105DC3C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>C_SharpHomework</RootNamespace>
-    <AssemblyName>C-SharpHomework</AssemblyName>
+    <RootNamespace>HangMan</RootNamespace>
+    <AssemblyName>HangMan</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hangman.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +49,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Acilis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Acilis.Designer.cs">
+      <DependentUpon>Acilis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaIslemleri.cs" />
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KelimeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KelimeEkle.Designer.cs">
+      <DependentUpon>KelimeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KelimeIslemleri.cs" />
+    <Compile Include="KelimeSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KelimeSil.Designer.cs">
+      <DependentUpon>KelimeSil.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acilis.resx">
+      <DependentUpon>Acilis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KelimeEkle.resx">
+      <DependentUpon>KelimeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KelimeSil.resx">
+      <DependentUpon>KelimeSil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +97,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +111,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hangman.ico" />
+    <None Include="Resources\674342_man_512x512.png" />
+    <None Include="Resources\icons8-add-50.png" />
+    <None Include="Resources\icons8-delete-50.png" />
+    <None Include="Resources\icons8-word-52.png" />
+    <None Include="Resources\icons8-options-50.png" />
+    <None Include="Resources\icons8-counter-50.png" />
+    <None Include="Resources\icons8-settings-50.png" />
+    <Content Include="step_images\step1.png" />
+    <Content Include="step_images\step10.png" />
+    <Content Include="step_images\step11.png" />
+    <Content Include="step_images\step12.png" />
+    <Content Include="step_images\step2.png" />
+    <Content Include="step_images\step3.png" />
+    <Content Include="step_images\step4.png" />
+    <Content Include="step_images\step5.png" />
+    <Content Include="step_images\step6.png" />
+    <Content Include="step_images\step7.png" />
+    <Content Include="step_images\step8.png" />
+    <Content Include="step_images\step9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

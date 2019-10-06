@@ -4,10 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace C_SharpHomework
+namespace HangMan
 {
     static class Program
     {
+        public static string kelimeDosyaAdi = "dbWords.clk";
+        public static string skorDosyaAdi = "scores.clk";
+        public static bool buyuktenKucugeMi = true;
+        public static int harfSayisi = 0;
+        public static bool oynaniyorMu = false;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +21,7 @@ namespace C_SharpHomework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new AnaForm());
         }
     }
 }
