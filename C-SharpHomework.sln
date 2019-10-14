@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangMan", "C-SharpHomework\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumber", "FindNumber\FindNumber.csproj", "{2E286C60-4692-4B76-B51E-F7D15B1959D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGame", "MathGame\MathGame.csproj", "{24FB5515-3603-468C-BC8D-0D706C8A46D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2E286C60-4692-4B76-B51E-F7D15B1959D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E286C60-4692-4B76-B51E-F7D15B1959D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E286C60-4692-4B76-B51E-F7D15B1959D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

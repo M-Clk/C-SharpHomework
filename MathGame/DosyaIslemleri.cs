@@ -1,24 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HangMan
+namespace MathGame
 {
-    public class DosyaIslemleri
+    class DosyaIslemleri
     {
+        public bool KayitliSorulariYukle()
+        {
+            return false;
+        }
         private static DosyaIslemleri instance;
 
         private FileStream fileStream;
         private StreamWriter streamWriter;
-        private StreamReader streamReader;
 
         private DosyaIslemleri()
         {
-            DosyaKontrol(Program.kelimeDosyaAdi);
+            DosyaKontrol(Program.kayitliAyarDosyaAdi);
             DosyaKontrol(Program.skorDosyaAdi);
         }
-   
-        public static DosyaIslemleri KurucuGetir() 
+
+        public static DosyaIslemleri KurucuGetir()
         {
             if (instance == null) instance = new DosyaIslemleri();
             return instance;
@@ -26,13 +32,8 @@ namespace HangMan
 
         public string Oku(string dosyaAdi)
         {
-            using (fileStream = new FileStream(dosyaAdi, FileMode.Open))
-            {
-                streamReader = new StreamReader(fileStream);
-                string str = streamReader.ReadToEnd();
-                fileStream.Close();
+                string str = File.ReadAllText(dosyaAdi);
                 return str;
-            }
         }
         public void Ekle(string dosyaAdi, string value, char ayrac)
         {
@@ -57,9 +58,11 @@ namespace HangMan
         {
             if (!File.Exists(dosyaAdi))
             {
-                fileStream = File.Create(dosyaAdi);
+               fileStream= File.Create(dosyaAdi);
                 fileStream.Close();
             }
         }
+
     }
+    
 }

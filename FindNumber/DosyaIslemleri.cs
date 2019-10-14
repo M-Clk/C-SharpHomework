@@ -47,7 +47,10 @@ namespace FindNumber
         private void DosyaKontrol(string dosyaAdi)
         {
             if (!File.Exists(dosyaAdi))
-                File.Create(dosyaAdi);
+            {
+                fileStream = File.Create(dosyaAdi);
+                fileStream.Close();
+            }
         }
     }
 }
