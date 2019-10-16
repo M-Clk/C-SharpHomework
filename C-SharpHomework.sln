@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumber", "FindNumber\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathGame", "MathGame\MathGame.csproj", "{24FB5515-3603-468C-BC8D-0D706C8A46D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryGame", "MemoryGame\MemoryGame.csproj", "{B45A9441-C413-4768-AA3E-0378D7EE7015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24FB5515-3603-468C-BC8D-0D706C8A46D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45A9441-C413-4768-AA3E-0378D7EE7015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45A9441-C413-4768-AA3E-0378D7EE7015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45A9441-C413-4768-AA3E-0378D7EE7015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45A9441-C413-4768-AA3E-0378D7EE7015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
