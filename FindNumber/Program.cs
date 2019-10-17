@@ -12,7 +12,7 @@ namespace FindNumber
        public static int cevapHakki = 10;
        public static bool tekrarliMi = true;
        public static bool buyuktenKucugeMi = true;
-        public static string skorDosyaAdi = "scores.clk";
+       public static string skorDosyaAdi = "scores.clk";
 
         /// <summary>
         /// The main entry point for the application.

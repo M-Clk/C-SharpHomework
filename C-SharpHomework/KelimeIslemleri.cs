@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,13 @@ namespace HangMan
 {
     class KelimeIslemleri
     {
-        private DosyaIslemleri dosyaIslemleri;
         public KelimeIslemleri()
         {
-            dosyaIslemleri = DosyaIslemleri.KurucuGetir();
         }
-
+        const int  kelimeUzunlukSiniri= 49;
         public List<string> OkuKelime()
         {
-            string tekSatir = dosyaIslemleri.Oku(Program.kelimeDosyaAdi);
+            string tekSatir = File.ReadAllText(Program.kelimeDosyaAdi);
             string[] satirlar = tekSatir.Split('|');
             List<string> kelimeler = new List<string>();
             foreach (string item in satirlar)
@@ -25,7 +24,7 @@ namespace HangMan
         }
         public List<int> OkuSkor()
         {
-            string tekSatir = dosyaIslemleri.Oku(Program.skorDosyaAdi);
+            string tekSatir = File.ReadAllText(Program.skorDosyaAdi);
             string[] satirlar = tekSatir.Split('|');
             List<int> skorlar = new List<int>();
             foreach (string item in satirlar)
@@ -34,30 +33,16 @@ namespace HangMan
                 if (int.TryParse(item, out tempInt))
                     skorlar.Add(tempInt);
             }
-            SkorSirala(skorlar, Program.buyuktenKucugeMi);
+            skorlar.Sort();
+            skorlar.Reverse();
             return skorlar;
         }
-        public void SkorSirala(List<int> karisikListe, bool buyuktenKucugeMi)
-        {
-            int temp=0;
-            for (int i = 0; i < karisikListe.Count; i++)
-            {
-                for (int j = i; j < karisikListe.Count; j++)
-                {
-                    if ((karisikListe[j] > karisikListe[i])==buyuktenKucugeMi) {
-                        temp = karisikListe[i];
-                        karisikListe[i] = karisikListe[j];
-                        karisikListe[j] = temp;
-                    }
-                }
-            }
-        }
-         
+
         public string EkleKelime(string kelime)
         {
             if (kelime.Length < 2) return "En az iki harfli bir kelime yazin.";
             if (OkuKelime().Contains(kelime.ToUpper())) return "Bu kelime zaten var.";
-            dosyaIslemleri.Ekle(Program.kelimeDosyaAdi, kelime, '|');
+            File.AppendAllText(Program.kelimeDosyaAdi, kelime + "|");
             return null;
         }
         public string KelimeGetir()
@@ -65,13 +50,13 @@ namespace HangMan
             int length=0;
             int count;
             Random random = new Random();
-            if (Program.harfSayisi == 0)
+            if (Program.harfSayisi == 0)//Harf sayisi 0 ise rastgele bir harf sayisi uret
                 count = random.Next(2, 51);
             else
                 count = Program.harfSayisi;
-            List<string> kelimeHavuzu = new List<string>();
+            List<string> kelimeHavuzu = new List<string>(); //Verilen uzunlukta birden fazla kelime olabilir. O durumda hepsini bu havuza ekleyerek icinden rastgele bir kelime secerek gonder
             List<string> kelimeler = OkuKelime();
-            for (int fark = 0; fark < 49; fark++)
+            for (int fark = 0; fark < kelimeUzunlukSiniri; fark++)//Veritabaninda verilen uzunlukta kelime olmayabilir. Bu durumda tum kelimelere bakarak verilen uzunluga en yakin kelime(leri) bul ve havuza ekle. 0 dan baslayarak kelime uzunlugu sinirina kadar tum kelimeleri tek tek test et
                 foreach (string item in kelimeler)
                     if ((count - item.Length) == fark || (count - item.Length) == -fark)
                     {
@@ -94,7 +79,8 @@ namespace HangMan
         public void EkleSkor(int skor)
         {
             if(!OkuSkor().Contains(skor))
-            dosyaIslemleri.Ekle(Program.skorDosyaAdi,skor.ToString(),'|');
+            File.AppendAllText(Program.skorDosyaAdi, skor.ToString() + "|");
+
         }
         public void SilKelime(int pastIndex, List<string> kelimeler)
         {
@@ -104,7 +90,7 @@ namespace HangMan
                 if (i == pastIndex) continue;
                 str += kelimeler[i]+"|";
             }
-            dosyaIslemleri.Guncelle(Program.kelimeDosyaAdi, str);
+            File.WriteAllText(Program.kelimeDosyaAdi, str);
         }
        
         

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -33,8 +34,7 @@ namespace MathGame
             }
             else
             {
-                DosyaIslemleri dosyaIslemleri = DosyaIslemleri.KurucuGetir();
-                string kayitliBilgiler = dosyaIslemleri.Oku(kayitliAyarDosyaAdi);
+                string kayitliBilgiler = File.ReadAllText(kayitliAyarDosyaAdi);
                 if (kayitliBilgiler != null)
                 {
                     int.TryParse(kayitliBilgiler.Split('|')[0], out seviye);

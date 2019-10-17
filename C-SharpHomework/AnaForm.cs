@@ -15,7 +15,6 @@ namespace HangMan
         int hak;
         int toplamHak;
         string sorulanKelime;
-        int skor;
         private KelimeIslemleri kelimeIslemleri;
         public AnaForm()
         {
@@ -39,7 +38,6 @@ namespace HangMan
             Button button = (Button)sender;
             button.Enabled = false;
             HarfKontrolu(button.Text);
-            
         }
         private void HarfKontrolu(string harf)
         {
@@ -52,12 +50,12 @@ namespace HangMan
                     flag = true;
                 }
             }
-            hak--;
-            lblHak.Text = "Cevap Hakkınız: " + hak;
+            
+            
             if (!flag) 
             {
-                YanlisHarfGirisi(harf);
-                skor--;
+                lblHak.Text = "Cevap Hakkınız: " + (--hak);
+                YanlisHarfGirisi(harf);  
             }
 
             else if (KazandiMi())
@@ -68,7 +66,7 @@ namespace HangMan
         void YanlisHarfGirisi(string harf)
         {
             lblYanlisGirilen.Text += lblYanlisGirilen.Text.Equals("") ? harf : ", " + harf;
-            int imageIndex = (toplamHak-hak)* 11 / toplamHak;
+            int imageIndex = (toplamHak-hak)* 11 / toplamHak; //haklar azaldikca acilacak resim indexini resim sayisi ve hak ile orantili bir sekilde belirle
             pictureBox1.Image = stepImagesList.Images[imageIndex];
         }
         void OyunBitti(bool kazandiMi)
@@ -95,8 +93,8 @@ namespace HangMan
         int SkorGetir()
         {
             int hakYuzdesi = hak * 100 / toplamHak;
-            int skorYuzedesi = skor * 100 / toplamHak;
-            return hakYuzdesi*skorYuzedesi;
+            int kelimeUzunlugu = sorulanKelime.Length * 100 / 49;
+            return hakYuzdesi*kelimeUzunlugu;
         }
         bool KazandiMi()
         {
@@ -109,7 +107,6 @@ namespace HangMan
                     break;
                 }
             }
-
             return flag;
         }
         void Sifirla()
@@ -124,10 +121,7 @@ namespace HangMan
                 KelimeGoster();
                 Program.oynaniyorMu = true;
             }
-            
             lblYanlisGirilen.Text = "";
-            
-
         }
         void ButonAktiflestir(FlowLayoutPanel flowLayoutPanel)
         {
@@ -137,7 +131,6 @@ namespace HangMan
         bool KelimeYukle()
         {
             sorulanKelime = kelimeIslemleri.KelimeGetir();
-
             if (sorulanKelime == null)
             {
                 DialogResult dialogResult = MessageBox.Show("Veritabanında kelime bulunamadı. Kelime eklemek ister misiniz?", "Uyari", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -161,9 +154,10 @@ namespace HangMan
         void KelimeGoster()
         {
             hak = 0;
-            int fontSize = (sorulanKelime.Length < 30) ? 18 : 10;
-            int width = (sorulanKelime.Length < 30) ? 25 : 20;
-            int heigth = (sorulanKelime.Length < 30) ? 40 : 30;
+            bool kelimeKisaMi = sorulanKelime.Length < 30;
+            int fontSize = kelimeKisaMi ? 18 : 10;
+            int width = kelimeKisaMi ? 25 : 20;
+            int heigth = kelimeKisaMi ? 40 : 30;
 
             foreach (char item in sorulanKelime)
             {
@@ -174,11 +168,10 @@ namespace HangMan
                 tempLabel.Height = heigth;
                 tempLabel.Font = new Font(tempLabel.Font.Name, fontSize, FontStyle.Bold);
                 flowPanelKelimeler.Controls.Add(tempLabel);
-                if (!(item == ' ')) hak++;
+                if (!(item == ' ')) hak++;//cevap hakki hesaplarken bosluklari sayma
             }
             hak += 2;
             toplamHak = hak;
-            skor = hak;
             lblHak.Text= "Cevap Hakkınız: "+hak;
         }
         void SkorYukle()

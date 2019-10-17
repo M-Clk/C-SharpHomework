@@ -12,11 +12,9 @@ namespace HangMan
 {
     public partial class KelimeEkle : Form
     {
-        DosyaIslemleri dosyaIslemleri;
         public KelimeEkle()
         {
             InitializeComponent();
-            dosyaIslemleri = DosyaIslemleri.KurucuGetir();
         }
 
         private void button2_Click(object sender, EventArgs e)

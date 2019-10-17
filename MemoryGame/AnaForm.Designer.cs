@@ -135,10 +135,9 @@
             this.anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.anaPanel.Location = new System.Drawing.Point(0, 0);
             this.anaPanel.Name = "anaPanel";
-            this.anaPanel.RowCount = 3;
-            this.anaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.80328F));
-            this.anaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.03278F));
-            this.anaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.anaPanel.RowCount = 2;
+            this.anaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.13869F));
+            this.anaPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.86131F));
             this.anaPanel.Size = new System.Drawing.Size(646, 610);
             this.anaPanel.TabIndex = 0;
             // 
@@ -193,7 +192,8 @@
             this.picturePanel.Controls.Add(this.pictureBox37, 5, 4);
             this.picturePanel.Controls.Add(this.pictureBox38, 6, 4);
             this.picturePanel.Controls.Add(this.pictureBox39, 7, 4);
-            this.picturePanel.Location = new System.Drawing.Point(3, 75);
+            this.picturePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picturePanel.Location = new System.Drawing.Point(3, 83);
             this.picturePanel.Name = "picturePanel";
             this.picturePanel.RowCount = 5;
             this.picturePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -201,7 +201,7 @@
             this.picturePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.picturePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.picturePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.picturePanel.Size = new System.Drawing.Size(640, 470);
+            this.picturePanel.Size = new System.Drawing.Size(640, 524);
             this.picturePanel.TabIndex = 0;
             // 
             // pictureBox0
@@ -209,7 +209,7 @@
             this.pictureBox0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox0.Location = new System.Drawing.Point(3, 3);
             this.pictureBox0.Name = "pictureBox0";
-            this.pictureBox0.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox0.Size = new System.Drawing.Size(74, 98);
             this.pictureBox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox0.TabIndex = 0;
             this.pictureBox0.TabStop = false;
@@ -220,7 +220,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(83, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(74, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -231,7 +231,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(163, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox2.Size = new System.Drawing.Size(74, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -242,7 +242,7 @@
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(243, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox3.Size = new System.Drawing.Size(74, 98);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -253,7 +253,7 @@
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Location = new System.Drawing.Point(323, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox4.Size = new System.Drawing.Size(74, 98);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
@@ -264,7 +264,7 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(403, 3);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox5.Size = new System.Drawing.Size(74, 98);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
@@ -275,7 +275,7 @@
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Location = new System.Drawing.Point(483, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox6.Size = new System.Drawing.Size(74, 98);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
@@ -286,7 +286,7 @@
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Location = new System.Drawing.Point(563, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox7.Size = new System.Drawing.Size(74, 98);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
@@ -295,9 +295,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 97);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 107);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox8.Size = new System.Drawing.Size(74, 98);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
@@ -306,9 +306,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(83, 97);
+            this.pictureBox9.Location = new System.Drawing.Point(83, 107);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox9.Size = new System.Drawing.Size(74, 98);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 9;
             this.pictureBox9.TabStop = false;
@@ -317,9 +317,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(163, 97);
+            this.pictureBox10.Location = new System.Drawing.Point(163, 107);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox10.Size = new System.Drawing.Size(74, 98);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 10;
             this.pictureBox10.TabStop = false;
@@ -328,9 +328,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(243, 97);
+            this.pictureBox11.Location = new System.Drawing.Point(243, 107);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox11.Size = new System.Drawing.Size(74, 98);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 11;
             this.pictureBox11.TabStop = false;
@@ -339,9 +339,9 @@
             // pictureBox12
             // 
             this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Location = new System.Drawing.Point(323, 97);
+            this.pictureBox12.Location = new System.Drawing.Point(323, 107);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox12.Size = new System.Drawing.Size(74, 98);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 12;
             this.pictureBox12.TabStop = false;
@@ -350,9 +350,9 @@
             // pictureBox13
             // 
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Location = new System.Drawing.Point(403, 97);
+            this.pictureBox13.Location = new System.Drawing.Point(403, 107);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox13.Size = new System.Drawing.Size(74, 98);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 13;
             this.pictureBox13.TabStop = false;
@@ -361,9 +361,9 @@
             // pictureBox14
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(483, 97);
+            this.pictureBox14.Location = new System.Drawing.Point(483, 107);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox14.Size = new System.Drawing.Size(74, 98);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 14;
             this.pictureBox14.TabStop = false;
@@ -372,9 +372,9 @@
             // pictureBox15
             // 
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(563, 97);
+            this.pictureBox15.Location = new System.Drawing.Point(563, 107);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox15.Size = new System.Drawing.Size(74, 98);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 15;
             this.pictureBox15.TabStop = false;
@@ -383,9 +383,9 @@
             // pictureBox16
             // 
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(3, 191);
+            this.pictureBox16.Location = new System.Drawing.Point(3, 211);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox16.Size = new System.Drawing.Size(74, 98);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 16;
             this.pictureBox16.TabStop = false;
@@ -394,9 +394,9 @@
             // pictureBox17
             // 
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(83, 191);
+            this.pictureBox17.Location = new System.Drawing.Point(83, 211);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox17.Size = new System.Drawing.Size(74, 98);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 17;
             this.pictureBox17.TabStop = false;
@@ -405,9 +405,9 @@
             // pictureBox18
             // 
             this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox18.Location = new System.Drawing.Point(163, 191);
+            this.pictureBox18.Location = new System.Drawing.Point(163, 211);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox18.Size = new System.Drawing.Size(74, 98);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 18;
             this.pictureBox18.TabStop = false;
@@ -416,9 +416,9 @@
             // pictureBox19
             // 
             this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox19.Location = new System.Drawing.Point(243, 191);
+            this.pictureBox19.Location = new System.Drawing.Point(243, 211);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox19.Size = new System.Drawing.Size(74, 98);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 19;
             this.pictureBox19.TabStop = false;
@@ -427,9 +427,9 @@
             // pictureBox20
             // 
             this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox20.Location = new System.Drawing.Point(323, 191);
+            this.pictureBox20.Location = new System.Drawing.Point(323, 211);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox20.Size = new System.Drawing.Size(74, 98);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 20;
             this.pictureBox20.TabStop = false;
@@ -438,9 +438,9 @@
             // pictureBox21
             // 
             this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox21.Location = new System.Drawing.Point(403, 191);
+            this.pictureBox21.Location = new System.Drawing.Point(403, 211);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox21.Size = new System.Drawing.Size(74, 98);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 21;
             this.pictureBox21.TabStop = false;
@@ -449,9 +449,9 @@
             // pictureBox22
             // 
             this.pictureBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox22.Location = new System.Drawing.Point(483, 191);
+            this.pictureBox22.Location = new System.Drawing.Point(483, 211);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox22.Size = new System.Drawing.Size(74, 98);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 22;
             this.pictureBox22.TabStop = false;
@@ -460,9 +460,9 @@
             // pictureBox23
             // 
             this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox23.Location = new System.Drawing.Point(563, 191);
+            this.pictureBox23.Location = new System.Drawing.Point(563, 211);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox23.Size = new System.Drawing.Size(74, 98);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 23;
             this.pictureBox23.TabStop = false;
@@ -471,9 +471,9 @@
             // pictureBox24
             // 
             this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox24.Location = new System.Drawing.Point(3, 285);
+            this.pictureBox24.Location = new System.Drawing.Point(3, 315);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox24.Size = new System.Drawing.Size(74, 98);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 24;
             this.pictureBox24.TabStop = false;
@@ -482,9 +482,9 @@
             // pictureBox25
             // 
             this.pictureBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox25.Location = new System.Drawing.Point(83, 285);
+            this.pictureBox25.Location = new System.Drawing.Point(83, 315);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox25.Size = new System.Drawing.Size(74, 98);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 25;
             this.pictureBox25.TabStop = false;
@@ -493,9 +493,9 @@
             // pictureBox26
             // 
             this.pictureBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox26.Location = new System.Drawing.Point(163, 285);
+            this.pictureBox26.Location = new System.Drawing.Point(163, 315);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox26.Size = new System.Drawing.Size(74, 98);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 26;
             this.pictureBox26.TabStop = false;
@@ -504,9 +504,9 @@
             // pictureBox27
             // 
             this.pictureBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox27.Location = new System.Drawing.Point(243, 285);
+            this.pictureBox27.Location = new System.Drawing.Point(243, 315);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox27.Size = new System.Drawing.Size(74, 98);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 27;
             this.pictureBox27.TabStop = false;
@@ -515,9 +515,9 @@
             // pictureBox28
             // 
             this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox28.Location = new System.Drawing.Point(323, 285);
+            this.pictureBox28.Location = new System.Drawing.Point(323, 315);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox28.Size = new System.Drawing.Size(74, 98);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 28;
             this.pictureBox28.TabStop = false;
@@ -526,9 +526,9 @@
             // pictureBox29
             // 
             this.pictureBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox29.Location = new System.Drawing.Point(403, 285);
+            this.pictureBox29.Location = new System.Drawing.Point(403, 315);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox29.Size = new System.Drawing.Size(74, 98);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 29;
             this.pictureBox29.TabStop = false;
@@ -537,9 +537,9 @@
             // pictureBox30
             // 
             this.pictureBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox30.Location = new System.Drawing.Point(483, 285);
+            this.pictureBox30.Location = new System.Drawing.Point(483, 315);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox30.Size = new System.Drawing.Size(74, 98);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 30;
             this.pictureBox30.TabStop = false;
@@ -548,9 +548,9 @@
             // pictureBox31
             // 
             this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox31.Location = new System.Drawing.Point(563, 285);
+            this.pictureBox31.Location = new System.Drawing.Point(563, 315);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox31.Size = new System.Drawing.Size(74, 98);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 31;
             this.pictureBox31.TabStop = false;
@@ -559,9 +559,9 @@
             // pictureBox32
             // 
             this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox32.Location = new System.Drawing.Point(3, 379);
+            this.pictureBox32.Location = new System.Drawing.Point(3, 419);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox32.Size = new System.Drawing.Size(74, 102);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox32.TabIndex = 32;
             this.pictureBox32.TabStop = false;
@@ -570,9 +570,9 @@
             // pictureBox33
             // 
             this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox33.Location = new System.Drawing.Point(83, 379);
+            this.pictureBox33.Location = new System.Drawing.Point(83, 419);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox33.Size = new System.Drawing.Size(74, 102);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 33;
             this.pictureBox33.TabStop = false;
@@ -581,9 +581,9 @@
             // pictureBox34
             // 
             this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox34.Location = new System.Drawing.Point(163, 379);
+            this.pictureBox34.Location = new System.Drawing.Point(163, 419);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox34.Size = new System.Drawing.Size(74, 102);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox34.TabIndex = 34;
             this.pictureBox34.TabStop = false;
@@ -592,9 +592,9 @@
             // pictureBox35
             // 
             this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox35.Location = new System.Drawing.Point(243, 379);
+            this.pictureBox35.Location = new System.Drawing.Point(243, 419);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox35.Size = new System.Drawing.Size(74, 102);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 35;
             this.pictureBox35.TabStop = false;
@@ -603,9 +603,9 @@
             // pictureBox36
             // 
             this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox36.Location = new System.Drawing.Point(323, 379);
+            this.pictureBox36.Location = new System.Drawing.Point(323, 419);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox36.Size = new System.Drawing.Size(74, 102);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 36;
             this.pictureBox36.TabStop = false;
@@ -614,9 +614,9 @@
             // pictureBox37
             // 
             this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox37.Location = new System.Drawing.Point(403, 379);
+            this.pictureBox37.Location = new System.Drawing.Point(403, 419);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox37.Size = new System.Drawing.Size(74, 102);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox37.TabIndex = 37;
             this.pictureBox37.TabStop = false;
@@ -625,9 +625,9 @@
             // pictureBox38
             // 
             this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox38.Location = new System.Drawing.Point(483, 379);
+            this.pictureBox38.Location = new System.Drawing.Point(483, 419);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox38.Size = new System.Drawing.Size(74, 102);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 38;
             this.pictureBox38.TabStop = false;
@@ -636,9 +636,9 @@
             // pictureBox39
             // 
             this.pictureBox39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox39.Location = new System.Drawing.Point(563, 379);
+            this.pictureBox39.Location = new System.Drawing.Point(563, 419);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(74, 88);
+            this.pictureBox39.Size = new System.Drawing.Size(74, 102);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox39.TabIndex = 39;
             this.pictureBox39.TabStop = false;
@@ -662,7 +662,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.9697F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.0303F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(640, 66);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(640, 74);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label3
@@ -671,10 +671,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(128, 31);
+            this.label3.Location = new System.Drawing.Point(128, 34);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(384, 35);
+            this.label3.Size = new System.Drawing.Size(384, 40);
             this.label3.TabIndex = 9;
             this.label3.Text = "<-- Bilinen Çift Sayısı -->";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -685,10 +685,10 @@
             this.lblPuan1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPuan1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.lblPuan1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblPuan1.Location = new System.Drawing.Point(0, 31);
+            this.lblPuan1.Location = new System.Drawing.Point(0, 34);
             this.lblPuan1.Margin = new System.Windows.Forms.Padding(0);
             this.lblPuan1.Name = "lblPuan1";
-            this.lblPuan1.Size = new System.Drawing.Size(128, 35);
+            this.lblPuan1.Size = new System.Drawing.Size(128, 40);
             this.lblPuan1.TabIndex = 8;
             this.lblPuan1.Text = "0";
             this.lblPuan1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -702,7 +702,7 @@
             this.lblOyuncu1.Location = new System.Drawing.Point(0, 0);
             this.lblOyuncu1.Margin = new System.Windows.Forms.Padding(0);
             this.lblOyuncu1.Name = "lblOyuncu1";
-            this.lblOyuncu1.Size = new System.Drawing.Size(128, 31);
+            this.lblOyuncu1.Size = new System.Drawing.Size(128, 34);
             this.lblOyuncu1.TabIndex = 4;
             this.lblOyuncu1.Text = "1. Oyuncu";
             this.lblOyuncu1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -716,7 +716,7 @@
             this.lblOyuncu2.Location = new System.Drawing.Point(512, 0);
             this.lblOyuncu2.Margin = new System.Windows.Forms.Padding(0);
             this.lblOyuncu2.Name = "lblOyuncu2";
-            this.lblOyuncu2.Size = new System.Drawing.Size(128, 31);
+            this.lblOyuncu2.Size = new System.Drawing.Size(128, 34);
             this.lblOyuncu2.TabIndex = 5;
             this.lblOyuncu2.Text = "2. Oyuncu";
             this.lblOyuncu2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -732,7 +732,7 @@
             this.buttonBasla.Location = new System.Drawing.Point(133, 3);
             this.buttonBasla.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.buttonBasla.Name = "buttonBasla";
-            this.buttonBasla.Size = new System.Drawing.Size(374, 25);
+            this.buttonBasla.Size = new System.Drawing.Size(374, 28);
             this.buttonBasla.TabIndex = 6;
             this.buttonBasla.Text = "Oyuna Başla";
             this.buttonBasla.UseVisualStyleBackColor = false;
@@ -744,10 +744,10 @@
             this.lblPuan2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPuan2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.lblPuan2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblPuan2.Location = new System.Drawing.Point(512, 31);
+            this.lblPuan2.Location = new System.Drawing.Point(512, 34);
             this.lblPuan2.Margin = new System.Windows.Forms.Padding(0);
             this.lblPuan2.Name = "lblPuan2";
-            this.lblPuan2.Size = new System.Drawing.Size(128, 35);
+            this.lblPuan2.Size = new System.Drawing.Size(128, 40);
             this.lblPuan2.TabIndex = 7;
             this.lblPuan2.Text = "0";
             this.lblPuan2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

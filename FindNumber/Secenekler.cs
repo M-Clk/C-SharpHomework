@@ -19,7 +19,7 @@ namespace FindNumber
         int maximum = 30;
         private void numericUpDown_Press(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar); //Sadece sayi girilmesi icin...
         }
 
         private void numericUpDown1_KeyUp(object sender, KeyEventArgs e)
@@ -31,6 +31,10 @@ namespace FindNumber
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CikisYap();
+        }
+        void CikisYap()
+        {
             Program.cevapHakki = (int)numericCevapHakki.Value;
             Program.basamakSayisi = (int)numericBasamakSayisi.Value;
             Program.tekrarliMi = Convert.ToBoolean(comboTekrarliMi.SelectedIndex);
@@ -38,6 +42,10 @@ namespace FindNumber
         }
 
         private void Secenekler_Load(object sender, EventArgs e)
+        {
+            VarsayilanlariYukle();   
+        }
+        void VarsayilanlariYukle()
         {
             comboTekrarliMi.SelectedIndex = Convert.ToInt32(Program.tekrarliMi);
             numericBasamakSayisi.Value = Program.basamakSayisi;

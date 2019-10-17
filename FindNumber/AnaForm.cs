@@ -15,8 +15,10 @@ namespace FindNumber
     {
         int kalan_saniye = 30;
         int[] rakamlar;
+        List<int> bilinmeyenRakamlar;
         int cevapHakki;
         SkorIslemleri skorIslemleri;
+        SayisalIslemler sayisalIslemler;
         public AnaForm()
         {
             InitializeComponent();
@@ -40,10 +42,14 @@ namespace FindNumber
         {
             Secenekler secenekler = new Secenekler();
             skorIslemleri = new SkorIslemleri();
+            bilinmeyenRakamlar = new List<int>();
+            sayisalIslemler = new SayisalIslemler();
             secenekler.ShowDialog();
             timer.Start();
             Sifirla();
         }
+
+
 
         void NumericUpDownOlustur()
         {
@@ -76,7 +82,8 @@ namespace FindNumber
                 if (cevapHakki == 1)
                     OyunBitti(false);
                 else
-                    button1.Text = "Geç";
+                    flowPanelSayi.Enabled = false;
+                    
             }
         }
         bool HakAzalt()
@@ -86,7 +93,7 @@ namespace FindNumber
                 lblHak.Text = cevapHakki.ToString();
                 kalan_saniye = 30;
                 timer.Start();
-                button1.Text = "Sonuç";
+                flowPanelSayi.Enabled = true;
                 return true;
             }
             else return false;
@@ -97,25 +104,28 @@ namespace FindNumber
         }
         void SonucuGor()
         {
-            if (DogrulukTestEt() && kalan_saniye > 0)
+            if (DogrulukTestEt() && kalan_saniye > 0) //Eger hepsi dogru ve daha zaman kalmissa OyunBitti metoduna true deger dondur
                 OyunBitti(true);
-            else if (!HakAzalt())
+            else if (!HakAzalt()) //eger hakki bittiyse OyunBitti metoduna false dondur 
                 OyunBitti(false);
         }
         bool DogrulukTestEt()
         {
             int dogruSayisi = 0;
-            for (int i = 0; i < rakamlar.Length; i++)
+            for (int i = 0; i < rakamlar.Length; i++)//Dogru olanlari bul ve degistirmemesi icin control u etkisizlestir
             {
                 NumericUpDown numeric = (NumericUpDown)flowPanelSayi.Controls[i];
                 if (numeric.Value == rakamlar[i])
                 {
-                    numeric.BackColor = Color.DodgerBlue;
+                    bilinmeyenRakamlar.Remove(rakamlar[i]);
+                    numeric.BackColor = Color.LightBlue;
+                    numeric.Enabled = false;
                     dogruSayisi++;
                 }
-                else if (rakamlar.Contains((int)numeric.Value)) numeric.BackColor = Color.OrangeRed;
                 else numeric.BackColor = Color.AliceBlue;
             }
+            foreach (NumericUpDown numeric in flowPanelSayi.Controls)
+                if (bilinmeyenRakamlar.Contains((int)numeric.Value) && numeric.Enabled==true) numeric.BackColor = Color.OrangeRed;
             return dogruSayisi == rakamlar.Length;
         }
         int SkorGetir()
@@ -157,8 +167,9 @@ namespace FindNumber
             button1.Text = "Sonuç";
             kalan_saniye = 30;
             SkorYukle();
-            SayisalIslemler sayisalIslemler = new SayisalIslemler();
+            bilinmeyenRakamlar.Clear();
             rakamlar = sayisalIslemler.SayiGetir();
+            bilinmeyenRakamlar.AddRange(rakamlar); 
             cevapHakki = Program.cevapHakki;
             lblHak.Text = cevapHakki.ToString();
             NumericUpDownOlustur();

@@ -55,7 +55,6 @@
     <Compile Include="Acilis.Designer.cs">
       <DependentUpon>Acilis.cs</DependentUpon>
     </Compile>
-    <Compile Include="DosyaIslemleri.cs" />
     <Compile Include="AnaForm.cs">
       <SubType>Form</SubType>
     </Compile>

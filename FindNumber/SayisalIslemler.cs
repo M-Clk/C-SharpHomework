@@ -21,7 +21,7 @@ namespace FindNumber
             int randomSayi = random.Next(0, 10);
             if (Program.tekrarliMi)
                 return randomSayi;
-            while (rakamlar.Contains(randomSayi))randomSayi = random.Next(0, 10);//0 dizide tum elemanlarin varsayilan degeri old. son elemanda sonsuz donguye griyor. Duzelt
+            while (rakamlar.Contains(randomSayi))randomSayi = random.Next(0, 10);
             return randomSayi;
         }
         public int[] SayiGetir()

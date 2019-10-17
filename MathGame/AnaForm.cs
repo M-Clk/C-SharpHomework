@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,6 @@ namespace MathGame
         int blokIndexBaslangici = 0;
         bool pasHakki = true;
         SayisalIslemler sayisalIslemler;
-        DosyaIslemleri dosyaIslemleri;
         SkorIslemleri skorIslemleri;
         public AnaForm()
         {
@@ -96,8 +96,7 @@ namespace MathGame
         }
         void IlerlemeKaydet(int dogruSayisi)
         {
-            DosyaIslemleri dosyaIslemleri = DosyaIslemleri.KurucuGetir();
-            dosyaIslemleri.Guncelle(Program.kayitliAyarDosyaAdi,Program.seviye+"|"+SkorGetir(dogruSayisi));
+            File.WriteAllText(Program.kayitliAyarDosyaAdi, Program.seviye + "|" + SkorGetir(dogruSayisi));
         }
         void SeviyeTamamlandi(int dogruSayisi)
         {
@@ -189,7 +188,6 @@ namespace MathGame
         private void AnaForm_Load(object sender, EventArgs e)
         {
             sayisalIslemler = new SayisalIslemler();
-            dosyaIslemleri = DosyaIslemleri.KurucuGetir();
             skorIslemleri = new SkorIslemleri();
             Secenekler secenekler = new Secenekler();
             secenekler.ShowDialog();

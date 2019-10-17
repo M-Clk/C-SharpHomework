@@ -157,6 +157,7 @@
             this.MinimizeBox = false;
             this.Name = "Secenekler";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secenekler";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Secenekler_FormClosing);
             this.Load += new System.EventHandler(this.Secenekler_Load);
